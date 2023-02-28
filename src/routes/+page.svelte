@@ -5,7 +5,7 @@
     let featured = [
         {"title": "Digital Art", "image": "https://i.imgur.com/hpDVO2w.png", "alt": "Digital Art"},
         {"title": "Visualizations", "image": "https://i.imgur.com/CNmMpIm.png", "alt": "Visualizations"},
-        {"title": "Graphic Layouts", "image": "https://i.imgur.com/S6aGzDG.png", "alt": "Graphic Layouts"},
+        {"title": "Game Assets", "image": "https://i.imgur.com/6Uqhv5Z.gif", "alt": "Game Assets"},
     ];
 </script>
 
@@ -22,3 +22,9 @@
         {/each}
     </div>
 </div>
+
+<style>
+    .gridContainer {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+</style>
