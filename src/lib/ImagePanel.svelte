@@ -14,8 +14,7 @@
 <style>
     .panel {
         transform: rotateX(0deg);
-        -webkit-transform: rotateX(0deg);
-        transition: 0.5s;
+        -webkit-transform: rotateX(0deg);transition: 0.5s;
     }
     .panel:hover, .panel:active {
         transform: perspective(600px) rotateX(-10deg) scale(0.95);

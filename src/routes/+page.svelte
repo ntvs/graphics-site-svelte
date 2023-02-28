@@ -1,6 +1,7 @@
 <script>
     import CoverPanel from '../lib/CoverPanel.svelte';
     import ImagePanel from '../lib/ImagePanel.svelte';
+    import TextSection from '../lib/TextSection.svelte';
 
     let featured = [
         {"title": "Digital Art", "image": "https://i.imgur.com/hpDVO2w.png", "alt": "Digital Art"},
@@ -22,6 +23,10 @@
         {/each}
     </div>
 </div>
+
+
+<TextSection options={{"heading":"About", "text":"NTVS is a 2D and 3D artist who specializes in making low-poly models, game assets, and avatars. He has been experimenting with digital art since 2012 using Adobe Photoshop. Over the years, he has integrated Blender into his workflow to establish a unique aesthetic which puts traditional 2D digital art into a new dimension.", "backgroundColor": "#c4c4c4", "headingColor": "rgb(242, 60, 60)", "textColor": "rgb(79, 13, 13)", "anchor": "about"}}/>
+
 
 <style>
     .gridContainer {

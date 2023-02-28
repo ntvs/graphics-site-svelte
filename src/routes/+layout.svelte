@@ -6,7 +6,7 @@
         {"route": "/", "text": "Home"},
         {"route": "/work", "text": "Work"},
         {"route": "/", "text": "Pricing"},
-        {"route": "/", "text": "About"},
+        {"route": "/#about", "text": "About"},
     ]
 </script>
 

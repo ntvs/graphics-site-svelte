@@ -37,7 +37,6 @@
 
     let toggleModal = () => {modalOpen = !modalOpen};
     let updateModal = (image, alt) => {
-        console.log("Here");
         selectedProject = {image, alt}
     };
 </script>

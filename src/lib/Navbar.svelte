@@ -13,7 +13,7 @@
     };
 </script>
 
-<nav href="top">
+<nav>
     <div id="header">
         <div class="container">
             <a href="/"><img id="siteLogo" src="/logo.png" alt="Logo"></a>
