@@ -10,3 +10,13 @@
     {/if}
     <img src="{image}" alt="{alt}">
 </div>
+
+<style>
+    .panel {
+        transform: rotateY(0deg);
+        transition: 0.5s;
+    }
+    .panel:hover, .panel:active {
+        transform: perspective(600px) rotateY(-10deg);
+    }
+</style>
