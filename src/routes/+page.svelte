@@ -27,4 +27,8 @@
     .gridContainer {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+    .gridContainer a {
+        /*Safari experimental fix*/
+        transform: translateZ(0);
+    }
 </style>
