@@ -1,3 +1,7 @@
+# Safari 3D rotation patch
+- There MUST be a `transform: translateZ(0)` one level above the element where the 3D rotation occurs.
+- Thus, elements that involve a 3D rotation must be encompassed by an parent with `transform: translateZ(0)`
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
