@@ -1,6 +1,7 @@
 # Safari 3D rotation patch
 - There MUST be a `transform: translateZ(0)` one level above the element where the 3D rotation occurs.
-- Thus, elements that involve a 3D rotation must be encompassed by an parent with `transform: translateZ(0)`
+- Thus, elements that involve a 3D rotation must be encompassed by a parent with `transform: translateZ(0)`
+- The concept is that at the top level, elements must keep their depth to prevent intersection. Within each element, 3D transformation can occur.
 
 # create-svelte
 
