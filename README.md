@@ -1,3 +1,15 @@
+# Features
+- Image viewer
+- Sticky nav
+- Mobile dropdown
+- CSS grid responsive layout
+- Dynamic components
+
+# Todo
+- Sort/filter work by tag
+- Add dynamic pricing section
+- Fetch all dynamic data from API
+
 # Safari 3D rotation patch
 - There MUST be a `transform: translateZ(0)` one level above the element where the 3D rotation occurs.
 - Thus, elements that involve a 3D rotation must be encompassed by a parent with `transform: translateZ(0)`
