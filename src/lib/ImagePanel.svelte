@@ -15,8 +15,11 @@
     .panel {
         transform: rotateX(0deg);
         -webkit-transform: rotateX(0deg);
+
         /*Safari experimental fix*/
         transform: translateZ(0);
+        z-index: 0;
+        
         transition: 0.5s;
     }
     .panel:hover, .panel:active {
