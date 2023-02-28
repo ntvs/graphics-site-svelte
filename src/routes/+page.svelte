@@ -4,7 +4,7 @@
 
     let featured = [
         {"title": "Digital Art", "image": "https://i.imgur.com/hpDVO2w.png", "alt": "Digital Art"},
-        {"title": "Visualizations", "image": "https://i.imgur.com/ryv6oQM.png", "alt": "Visualizations"},
+        {"title": "Visualizations", "image": "https://i.imgur.com/CNmMpIm.png", "alt": "Visualizations"},
         {"title": "Graphic Layouts", "image": "https://i.imgur.com/S6aGzDG.png", "alt": "Graphic Layouts"},
     ];
 </script>

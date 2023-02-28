@@ -13,10 +13,17 @@
 
 <style>
     .panel {
-        transform: rotateY(0deg);
+        transform: rotateX(0deg);
         transition: 0.5s;
     }
     .panel:hover, .panel:active {
-        transform: perspective(600px) rotateY(-10deg);
+        transform: perspective(600px) rotateX(-10deg);
+    }
+    h2 {
+        background-color: #2d39a9;
+        transition: 0.5s;
+    }
+    .panel:hover h2, .panel:active h2 {
+        background: #3C4DF2;
     }
 </style>
