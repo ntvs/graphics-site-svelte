@@ -31,7 +31,7 @@
             <!-- <button class="modalButton">X</button> -->
             <div class="container gridContainer">
                 {#each links as link}
-                    <a class="modalLink" href="{link.route}">{link.text}</a>
+                    <a class="modalLink" href="{link.route}" on:click={toggleMenu}>{link.text}</a>
                 {/each}
             </div>
         </div>
@@ -65,6 +65,10 @@
         font-weight: bold;
     }
     
+    #navOpen {
+        cursor: pointer;
+    }
+
     /* .modalLink:hover, .modalLink:active {
         color: white;
     } */

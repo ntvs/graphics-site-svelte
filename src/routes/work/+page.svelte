@@ -1,4 +1,7 @@
 <script>
+    import { fade } from "svelte/transition";
+    import ImageModal from '../../lib/ImageModal.svelte';
+
     let projects = [
         {"image": "https://i.imgur.com/dpKPj6l.png", "name": "Low Poly ISS Cupola", "tags": ["3D Model"]},
         {"image": "https://i.imgur.com/LRgHbFH.gif", "name": "Low Poly Canadarm2", "tags": ["3D Model"]},
@@ -24,6 +27,17 @@
         {"image": "https://i.imgur.com/vpN6EAE.png", "name": "Character Select Screen Concept", "tags": ["Concept Art"]}
 
     ];
+    
+    //Modal state
+    let modalOpen = false;
+    let selectedProject = {"image":"", "alt":""};
+
+    //$: console.log(modalOpen);
+
+    let toggleModal = () => {modalOpen = !modalOpen};
+    let updateModal = (image, alt) => {
+        selectedProject = {image, alt}
+    };
 </script>
 
 <svelte:head>
@@ -34,7 +48,7 @@
     <div class="gridContainer">
         {#each projects as project}
             <div class="textPanel">
-                <div class="imgWrapper">
+                <div class="imgWrapper" on:click={() => {toggleModal(); updateModal(project.image, "");}} on:keypress={() => {toggleModal(); updateModal(project.image, "");}}>
                     <img src="{project.image}" alt="{project.name}">
                 </div>
                 <p class="name">{project.name}</p>
@@ -46,12 +60,30 @@
             </div>
         {/each}
     </div>
+
+    <!-- <span class:invisible={!modalOpen} style="transition: 1s;">
+        <ImageModal image={selectedProject.image} alt={selectedProject.alt} on:close={toggleModal}/>
+    </span> -->
+
+    {#if modalOpen}
+        <div class="modal" transition:fade on:click={() => {modalOpen = false}} on:keypress={() => {modalOpen = false}}>
+            <div class="container">
+                <img src="{selectedProject.image}" alt="{selectedProject.alt}">
+            </div>
+        </div>
+    {/if}
+
 </div>
 
 <style>
 
+    .modal img {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
     .gridContainer {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
     .textPanel {

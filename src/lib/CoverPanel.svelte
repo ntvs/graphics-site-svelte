@@ -14,7 +14,7 @@
 <style>
     .cover .container h1 {
         color: white;
-        padding: 4vh 3vw;
+        padding: 0 0 4vh 3vw;
         font-size: max(2.8em, 5vw);
     }
 </style>
