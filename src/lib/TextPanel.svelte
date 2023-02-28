@@ -50,6 +50,7 @@
     .textPanel:hover img, .textPanel:active img {
         box-shadow: 0 0 20px 0.5em rgba(0, 0, 0, 0.2);
         transform: rotate3d(0, 0, 0, 0) rotate(0);
+        -webkit-transform: rotate3d(0, 0, 0, 0) rotate(0);
 
     }
     
@@ -59,6 +60,7 @@
         transition: 0.5s;
 
         transform: rotate3d(.5,-.866,0,15deg) rotate(1deg);
+        -webkit-transform: rotate3d(.5,-.866,0,15deg) rotate(1deg);
     }
 
     .imgWrapper {
