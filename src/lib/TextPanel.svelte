@@ -46,6 +46,8 @@
         display: grid;
         justify-items: center;
         align-items: center;
+        /*Safari experimental fix*/
+        transform: translateZ(0);
     }
     .textPanel:hover img, .textPanel:active img {
         box-shadow: 0 0 20px 0.5em rgba(0, 0, 0, 0.2);
