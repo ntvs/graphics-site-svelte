@@ -9,7 +9,7 @@
     };
 </script>
 
-<div class="textSection" style="background-color: {options.backgroundColor}" id="{options.anchor}">
+<div class="textSection" style="background: {options.backgroundColor}" id="{options.anchor}">
     <div class="container">
         <h1 style="color: {options.headingColor}">{options.heading}</h1>
         <p style="color: {options.textColor}">{options.text}</p>

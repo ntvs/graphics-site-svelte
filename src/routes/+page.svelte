@@ -25,7 +25,7 @@
 </div>
 
 
-<TextSection options={{"heading":"About", "text":"NTVS is a 2D and 3D artist who specializes in making low-poly models, game assets, and avatars. He has been experimenting with digital art since 2012 using Adobe Photoshop. Over the years, he has integrated Blender into his workflow to establish a unique aesthetic which puts traditional 2D digital art into a new dimension.", "backgroundColor": "#c4c4c4", "headingColor": "rgb(242, 60, 60)", "textColor": "rgb(79, 13, 13)", "anchor": "about"}}/>
+<TextSection options={{"heading":"About", "text":"NTVS is a 2D and 3D artist who specializes in making low-poly models, game assets, and avatars. He has been experimenting with digital art since 2012 using Adobe Photoshop. Over the years, he has integrated Blender into his workflow to establish a unique aesthetic which puts traditional 2D digital art into a new dimension.", "backgroundColor": "linear-gradient(rgb(196, 196, 196), rgb(108, 108, 108))", "headingColor": "rgb(242, 60, 60)", "textColor": "rgb(79, 13, 13)", "anchor": "about"}}/>
 
 
 <style>
