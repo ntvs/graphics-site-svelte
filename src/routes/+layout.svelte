@@ -10,6 +10,7 @@
     ]
 </script>
 
+<span id="top" class="invisible"></span>
 <NavBar links={links} />
 
 <slot />
