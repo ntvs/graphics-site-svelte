@@ -1,6 +1,7 @@
 <script>
     import { fade } from "svelte/transition";
-    import ImageModal from '../../lib/ImageModal.svelte';
+    //import ImageModal from '../../lib/ImageModal.svelte';
+    import TextPanel from '../../lib/TextPanel.svelte';
 
     let projects = [
         {"image": "https://i.imgur.com/dpKPj6l.png", "name": "Low Poly ISS Cupola", "tags": ["3D Model"]},
@@ -36,6 +37,7 @@
 
     let toggleModal = () => {modalOpen = !modalOpen};
     let updateModal = (image, alt) => {
+        console.log("Here");
         selectedProject = {image, alt}
     };
 </script>
@@ -45,22 +47,15 @@
 </svelte:head>
 
 <div class="container" style="padding: 1em 0">
+
+    <!--Display each project as an image with tags-->
     <div class="gridContainer">
         {#each projects as project}
-            <div class="textPanel">
-                <div class="imgWrapper" on:click={() => {toggleModal(); updateModal(project.image, "");}} on:keypress={() => {toggleModal(); updateModal(project.image, "");}}>
-                    <img src="{project.image}" alt="{project.name}">
-                </div>
-                <p class="name">{project.name}</p>
-                <div class="tags">
-                    {#each project.tags as tag}
-                        <p class="tag">{tag}</p>
-                    {/each}
-                </div>
-            </div>
+            <TextPanel object={project} on:click={() => {toggleModal(); updateModal(project.image, "");}} on:keypress={() => {toggleModal(); updateModal(project.image, "");}} />
         {/each}
     </div>
 
+    <!--Modal component test code - lags-->
     <!-- <span class:invisible={!modalOpen} style="transition: 1s;">
         <ImageModal image={selectedProject.image} alt={selectedProject.alt} on:close={toggleModal}/>
     </span> -->
@@ -86,48 +81,4 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
-    .textPanel {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-    }
-    .textPanel:hover img, .textPanel:active img {
-        box-shadow: 0 0 20px 0.5em rgba(0, 0, 0, 0.2);
-        transform: rotate3d(0, 0, 0, 0) rotate(0);
-
-    }
-    
-    .textPanel img {
-        width: 100%;
-        height: auto;
-        transition: 0.5s;
-
-        transform: rotate3d(.5,-.866,0,15deg) rotate(1deg);
-    }
-
-    .imgWrapper {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        aspect-ratio: 1 / 1;
-    }
-
-    .name {
-        color: rgba(60, 77, 242, 1.0);
-        padding: 1em;
-    }
-
-    .tags {
-        display: inline-flex;
-    }
-
-    .tag {
-        color: white;
-        background-color: #84253b;
-        border-radius: 0.5em;
-        padding: 0.3em;
-        font-size: 0.9em;
-        display: inline-block;
-        margin: 0.1em;
-    }
 </style>
