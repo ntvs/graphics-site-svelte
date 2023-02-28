@@ -29,8 +29,8 @@
 
 </script>
 
-<div class="textPanel" on:click={() => {dispatch('click', {})}} on:keypress={() => {dispatch('keypress', {})}}>
-    <div class="imgWrapper">
+<div class="textPanel">
+    <div class="imgWrapper" on:click={() => {dispatch('click', {})}} on:keypress={() => {dispatch('keypress', {})}}>
         <img src="{object.image}" alt="{object.name}">
     </div>
     <p class="name">{object.name}</p>
