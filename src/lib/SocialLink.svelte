@@ -32,14 +32,13 @@
 
     .social-icon {
         display: inline-block;
-        height: 20px;
+        height: 1.5em;
         width: auto;
-        padding-right: 10px;
         vertical-align: middle;
-        color: white;
     }
 
     .social-text {
+        padding-left: 0.5em;
         display: inline-block;
     }
 </style>

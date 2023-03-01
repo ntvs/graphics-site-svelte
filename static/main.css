@@ -106,11 +106,12 @@ h2 {
 .panel img {
     /* margin: 1em 0; */
     /* background-color: #AFAFFF; */
+    box-shadow: 0 0 20px 0.5em rgba(0, 0, 0, 0.2);
     transition: 0.2s;
 }
 
 .panel:hover img, .panel:active img {
-    box-shadow: 0 0 20px 0.5em rgba(0, 0, 0, 0.2);
+  /**/  
 }
 
 .panel img {
@@ -188,7 +189,8 @@ h2 {
 
 /*Footer styles*/
 footer {
-    background-color: #222E12;
+    /* background-color: #222E12; */
+    background: #131511;
     padding: 2em 0;
     text-align: center;
     color: #76BD13;

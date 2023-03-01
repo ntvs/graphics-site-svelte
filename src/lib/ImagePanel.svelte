@@ -13,12 +13,13 @@
 
 <style>
     .panel {
-        transform: rotateX(0deg);
-        -webkit-transform: rotateX(0deg);transition: 0.5s;
-    }
-    .panel:hover, .panel:active {
         transform: perspective(600px) rotateX(-10deg) scale(0.95);
         -webkit-transform: perspective(600px) rotateX(-10deg) scale(0.95);
+        transition: 0.5s;
+    }
+    .panel:hover, .panel:active {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
     }
     h2 {
         background-color: #2d39a9;
