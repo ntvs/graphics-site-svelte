@@ -5,7 +5,7 @@
     let links = [
         {"route": "/", "text": "Home"},
         {"route": "/work", "text": "Work"},
-        {"route": "/", "text": "Pricing"},
+        //{"route": "/", "text": "Pricing"},
         {"route": "/#about", "text": "About"},
     ]
 </script>
