@@ -9,6 +9,8 @@
         {"image": "https://i.imgur.com/2xVjJKO.png", "name": "Low Poly Ferrari SF90", "tags": ["3D Model"]},
         {"image": "https://i.imgur.com/o9ulwJB.png", "name": "Low Poly Stock Car Asset", "tags": ["3D Model"]},
         {"image": "https://i.imgur.com/ZfVTIDy.png", "name": "2022 WAS Power Ranking", "tags": ["Digital Art"]},
+        {"image": "https://i.imgur.com/tD7CESp.png", "name": "Melee At The Elm Top 8", "tags": ["Digital Art"]},
+        {"image": "https://i.imgur.com/aikFR8B.png", "name": "Melee At The Elm Top 3", "tags": ["Digital Art"]},
         {"image": "https://i.imgur.com/Grm9L3A.png", "name": "Dallasmed65 Avatar", "tags": ["Digital Art"]},
         {"image": "https://i.imgur.com/We9oyuK.png", "name": "AdzyMCPE Avatar", "tags": ["Digital Art"]},
         {"image": "https://i.imgur.com/7pZy6Qx.png", "name": "Cmrowlee Avatar", "tags": ["Digital Art"]},
