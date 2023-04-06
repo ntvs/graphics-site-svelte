@@ -4,6 +4,7 @@
     import TextPanel from '../../lib/TextPanel.svelte';
 
     let projects = [
+        {"image": "https://i.imgur.com/VWbkIMj.png", "name": "Stylized Blue Falcon", "tags": ["3D Model"]},
         {"image": "https://i.imgur.com/dpKPj6l.png", "name": "Low Poly ISS Cupola", "tags": ["3D Model"]},
         {"image": "https://i.imgur.com/LRgHbFH.gif", "name": "Low Poly Canadarm2", "tags": ["3D Model"]},
         {"image": "https://i.imgur.com/2xVjJKO.png", "name": "Low Poly Ferrari SF90", "tags": ["3D Model"]},
