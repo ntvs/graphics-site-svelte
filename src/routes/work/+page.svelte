@@ -26,7 +26,6 @@
         {"image": "https://i.imgur.com/CWy780F.png", "name": "Rigged 2.5D Character", "tags": ["Digital Art", "Sprite"]},
         {"image": "https://i.imgur.com/Dj9mVv0.png", "name": "Character Spritesheet", "tags": ["Digital Art", "Sprite"]},
         {"image": "https://i.imgur.com/TwWusiG.png", "name": "Mock Game Scene", "tags": ["Digital Art", "Sprite"]},
-        {"image": "https://i.imgur.com/4cO2ogr.png", "name": "Ocean Creature", "tags": ["Digital Art", "Sprite"]},
         {"image": "https://i.imgur.com/Pcsr2kA.jpg", "name": "The Originals Cover", "tags": ["Digital Art"]},
         {"image": "https://i.imgur.com/FEvhlAZ.png", "name": "3D Bust", "tags": ["Digital Art", "3D Model"]},
         {"image": "https://i.imgur.com/vpN6EAE.png", "name": "Character Select Screen Concept", "tags": ["Concept Art"]},
